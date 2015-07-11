@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffbca511">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResBal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:background="#ff968211"
+        android:textColor="#fff4d419"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etResBal"
+        android:layout_below="@+id/tvResBal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff4d419"
+        android:layout_marginRight="20dp"
+        android:hint="@string/hint_edit_text_reserv_bal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddResBal"
+        android:textColor="#fff4d419"
+        android:background="#ff968211"
+        android:layout_toRightOf="@+id/etResBal"
+        android:layout_toEndOf="@+id/etResBal"
+        android:layout_alignBottom="@+id/etResBal"
+        android:text="@string/btn_clear_res_bal"
+        android:clickable="false"
+        android:elegantTextHeight="false"
+        android:singleLine="false" />
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/lvResBal"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnAddResBal"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ffc8b111" />
+</RelativeLayout>

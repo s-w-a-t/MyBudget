@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MyBudget</string>
+    <string name="title_activity_pos_balance">PositiveBalance</string>
+    <string name="title_activity_neg_balance">NegativeBalance</string>
+    <string name="title_activity_res_balance">ReservBalance</string>
+
+    <string name="menu_name_item">Очистити все</string>
+
+    <string name="btn_add_positiv_bal">Додати Доходи</string>
+    <string name="btn_add_negativ_bal">Додати Покупку</string>
+    <string name="btn_reserv">Резерв</string>
+
+    <string name="btn_add_pos_bal">Додати</string>
+    <string name="btn_clear_pos_bal">Очистити</string>
+
+    <string name="btn_clear_res_bal">Додати</string>
+
+    <string name="btn_clear_shopp_list">Очистити список покупок</string>
+    <string name="btn_clear_neg_bal">Очистити список витрат</string>
+
+    <string name="head_in_pos_bal">Список доходів за місяць</string>
+    <string name="head_in_neg_bal">Список витрат за місяць</string>
+
+    <string name="head_pos_bal_mid">Дохід в день</string>
+    <string name="head_neg_bal_mid">Витрати в день</string>
+
+    <string name="head_pos_bal_month">Дохід за цей місяць</string>
+    <string name="head_neg_bal_month">Витрати за цей місяць</string>
+
+    <string name="hint_edit_text_pos_bal">Введіть свій дохід</string>
+    <string name="hint_edit_text_val_name">Назва покупки</string>
+    <string name="hint_edit_text_val_cost">Вартість</string>
+    <string name="hint_edit_text_reserv_bal">Введіть суму</string>
+
+
+
+    <string name="delete_rec_from_table">Видалити запис</string>
+
+
+</resources>

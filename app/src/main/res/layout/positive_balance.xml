@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.swat.mybudget.PosBalance"
+    android:background="#558B2F">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHeading"
+            android:textSize="28sp"
+            android:text="@string/head_in_pos_bal"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:gravity="center_horizontal"
+            android:textColor="#76FF03" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etValuePosBal"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/tvHeading"
+            android:layout_toLeftOf="@+id/btnAddPosBal"
+            android:hint="@string/hint_edit_text_pos_bal"
+            android:textColor="#76FF03"
+            android:backgroundTint="#76FF03" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_add_pos_bal"
+            android:id="@+id/btnAddPosBal"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/tvHeading"
+            android:background="#7CB342"
+            android:textColor="#76FF03"
+            android:layout_toLeftOf="@+id/btnClearPosBal"
+            android:layout_marginRight="3dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_clear_pos_bal"
+            android:id="@+id/btnClearPosBal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvHeading"
+            android:background="#7CB342"
+            android:textColor="#76FF03"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSumAllPosBal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnClearPosBal"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#7CB342"
+            android:textColor="#76FF03"
+            android:textSize="16sp"
+            android:layout_marginBottom="3dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lvPosBal"
+            android:textFilterEnabled="false"
+            android:background="#7CB342" />
+    </FrameLayout>
+</LinearLayout>

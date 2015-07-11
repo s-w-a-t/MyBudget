@@ -1,0 +1,321 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivityFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#CE93D8">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#558B2F"
+                    android:gravity="center"
+                    android:textColor="#76FF03"
+                    android:text="@string/head_pos_bal_month"
+                    android:id="@+id/tvHeadPosBalMonth"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:id="@+id/tvPosBalMonth"
+                    android:background="#689F38"
+                    android:gravity="center"
+                    android:textColor="#76FF03"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#B71C1C"
+                    android:gravity="center"
+                    android:textColor="#FFD600"
+                    android:text="@string/head_neg_bal_month"
+                    android:id="@+id/tvHeadNegBalMonth"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:id="@+id/tvNegBalMonth"
+                    android:background="#D50000"
+                    android:gravity="center"
+                    android:textColor="#FFD600"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:src="@drawable/money"
+                    android:id="@+id/icReservationMoney"
+                    android:background="#FFD600" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#ff968211"
+                    android:id="@+id/tvReservBalance"
+                    android:textColor="#FFD600"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#558B2F"
+                        android:id="@+id/tvHeadPosBalMid"
+                        android:gravity="center"
+                        android:textColor="#76FF03"
+                        android:text="@string/head_pos_bal_mid" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="#689F38"
+                        android:id="@+id/tvPosBalMidDay"
+                        android:gravity="center"
+                        android:textColor="#76FF03"
+                        android:textSize="36sp"
+                        android:outlineProvider="background" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#B71C1C"
+                        android:id="@+id/tvHeadNegBalMid"
+                        android:gravity="center"
+                        android:textColor="#FFD600"
+                        android:text="@string/head_neg_bal_mid" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="#D50000"
+                        android:id="@+id/tvNegBalMidDay"
+                        android:gravity="center"
+                        android:textColor="#FFD600"
+                        android:textSize="36sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnReservBalance"
+                android:layout_weight="1"
+                android:background="#ffbca511"
+                android:textColor="#FFD600"
+                android:text="@string/btn_reserv" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#689F38"
+                android:id="@+id/btnPosBalance"
+                android:text="@string/btn_add_positiv_bal"
+                android:textColor="#76FF03" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:background="#ff000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/etValueName"
+                    android:layout_alignParentLeft="false"
+                    android:background="#CE93D8"
+                    android:hint="@string/hint_edit_text_val_name"
+                    android:layout_weight="5"
+                    android:textSize="16dp"
+                    android:layout_margin="1dp"
+                    android:textColor="#AA00FF" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/etValueCost"
+                    android:layout_alignParentRight="false"
+                    android:background="#CE93D8"
+                    android:hint="@string/hint_edit_text_val_cost"
+                    android:layout_weight="3"
+                    android:textSize="16dp"
+                    android:layout_margin="1dp"
+                    android:textColor="#AA00FF" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="#AA00FF"
+                    android:id="@+id/btnAddBuying"
+                    android:text="@string/btn_add_negativ_bal"
+                    android:textColor="#CE93D8"
+                    android:textSize="12dp"
+                    android:layout_margin="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnClearShoppList"
+                    android:layout_below="@+id/etValueName"
+                    android:background="#AA00FF"
+                    android:textColor="#CE93D8"
+                    android:layout_weight="5"
+                    android:text="@string/btn_clear_shopp_list"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:layout_margin="1dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tvDateShoppList"
+                    android:layout_weight="3"
+                    android:layout_margin="1dp"
+                    android:background="#CE93D8"
+                    android:gravity="center"
+                    android:textColor="#AA00FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#CE93D8"
+                    android:id="@+id/tvBalanceShoppList"
+                    android:textColor="#AA00FF"
+                    android:layout_marginTop="0dp"
+                    android:textSize="22sp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_margin="1dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lvShoppList"
+                android:background="#CE93D8">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
